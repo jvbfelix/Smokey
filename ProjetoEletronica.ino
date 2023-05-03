@@ -40,12 +40,12 @@ void changeAlarm(int temp, int gas){
     // NIVEL 2
     digitalWrite(alarme1, LOW);
     digitalWrite(alarme2, LOW);
-    digitalWrite(alarme3, LOW);
+    digitalWrite(alarme3, HIGH);
 
     digitalWrite(ledVermelho, LOW);
     digitalWrite(ledAmarelo, LOW);
-    digitalWrite(ledVerde, HIGH);
-    digitalWrite(ledAzul, LOW);
+    digitalWrite(ledVerde, LOW);
+    digitalWrite(ledAzul, HIGH);
   } else if((temp > 3  && temp < 6) || (gas > 3  && gas < 6)){
     // NIVEL 3
     digitalWrite(alarme1, HIGH);
